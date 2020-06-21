@@ -20,7 +20,7 @@ class Parser:
                 if current is not None:
                     if previous is not None:
                         if previous.category is TriggerCategory.Effect:
-                            if current.cate is TriggerCategory.Cause:
+                            if current.category is TriggerCategory.Cause:
                                 result.append(block)
                                 block = []
                     block.append(current)
